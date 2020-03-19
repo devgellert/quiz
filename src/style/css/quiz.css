@@ -1,0 +1,105 @@
+#quiz {
+  width: 100vw;
+  height: 100vh;
+  background: #84eeff;
+  background: linear-gradient(90deg, #84eeff 0%, #008eff 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#module {
+  width: 800px;
+  height: auto;
+  max-width: 90%;
+  background-color: white;
+  border-radius: 10px;
+  border: 1px solid black;
+  box-shadow: 0 12px 20px -6px black;
+  border-radius: 10px;
+}
+
+#points {
+  float: right;
+  padding: 10px;
+  background-color: lightgreen;
+  border-radius: 0 10px 0 0;
+}
+
+#question span {
+  padding: 10px;
+  background-color: black;
+  color: white;
+  float: left;
+  border-radius: 10px 0 0 0;
+}
+#question h3 {
+  padding: 10px;
+  width: 80%;
+  margin: 20px auto;
+  border-bottom: 1px solid black;
+}
+
+#answers {
+  width: 80%;
+  margin: 10px auto;
+}
+#answers .answer {
+  padding: 10px;
+  line-height: 1.5rem;
+  cursor: pointer;
+  border-radius: 10px;
+}
+#answers .answer span {
+  background: black;
+  color: white;
+  padding: 5px;
+  border-radius: 100px;
+  margin-right: 10px;
+}
+#answers .answer:hover {
+  background-color: rgba(132, 238, 255, 0.5);
+}
+
+#continue-button, #check-button {
+  padding: 20px;
+  font-size: 1.5rem;
+  float: right;
+  border-radius: 10px 0 10px 0;
+  border: 1px solid black;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+#continue-button:hover, #check-button:hover {
+  background-color: lightgreen;
+}
+
+#name-form {
+  width: 500px;
+}
+#name-form h1 {
+  text-align: center;
+}
+#name-form input {
+  padding: 10px;
+  height: 50px;
+  width: 200px;
+  box-sizing: border-box;
+  margin-left: calc( 50% - 100px );
+  margin-top: 20px;
+  border-radius: 10px;
+  border: 0;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+}
+#name-form button {
+  height: 50px;
+  width: 200px;
+  margin-left: calc( 50% - 100px );
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/*# sourceMappingURL=quiz.css.map */

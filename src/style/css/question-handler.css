@@ -1,0 +1,118 @@
+#question-handler {
+  min-height: 100vh;
+  background: #84eeff;
+  background: linear-gradient(90deg, #84eeff 0%, #008eff 63%);
+  padding-bottom: 50px;
+}
+#question-handler form {
+  box-shadow: 0 12px 20px -6px black;
+  border-radius: 10px;
+  background: white;
+  width: 500px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 10px;
+}
+#question-handler form .error {
+  margin-top: 10px;
+  color: red;
+  margin-bottom: 10px;
+  text-align: center;
+}
+#question-handler form #submit {
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: lightgreen;
+  color: black;
+  font-size: 2rem;
+  margin-left: calc( 50% - 150px );
+  margin-top: 10px;
+}
+#question-handler form h2 {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 10px;
+}
+#question-handler form .form-section {
+  border-radius: 10px;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+#question-handler form input {
+  box-sizing: border-box;
+  width: 200px;
+  height: 30px;
+  padding: 0 15px;
+  border-radius: 10px;
+  border: 0;
+  background: white;
+  -moz-box-shadow: inset 0 0 10px #000000;
+  -webkit-box-shadow: inset 0 0 10px #000000;
+  box-shadow: inset 0 0 10px #000000;
+  margin-left: calc( 50% - 100px );
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+#question-handler form label {
+  margin-left: 5px;
+}
+#question-handler form .right {
+  background-color: lightgreen;
+}
+
+#right-answer-section {
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px 0;
+}
+#right-answer-section #right-id {
+  font-size: 2rem;
+  border: 1px solid black;
+  color: black;
+  padding: 5px;
+  border-radius: 1000px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#right-answer-section button {
+  width: 150px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  border: 0;
+  background-color: black;
+  color: white;
+  padding: 5px;
+}
+
+@media screen and (max-width: 1200px) {
+  #question-handler form {
+    width: 90%;
+    hyphens: auto;
+  }
+  #question-handler form #submit {
+    width: 150px;
+    height: 30px;
+    font-size: 1.5rem;
+    margin-left: calc( 50% - 75px );
+  }
+
+  #right-answer-section #right-id {
+    font-size: 1rem;
+    width: 25px;
+    height: 25px;
+  }
+  #right-answer-section button {
+    width: 75px;
+    font-size: 0.9rem;
+  }
+}
+
+/*# sourceMappingURL=question-handler.css.map */

@@ -1,25 +1,25 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Switch, BrowserRouter as Router, Route } from 'react-router-dom'
+import QuestionHandler from './components/QuestionHandler/QuestionHandler';
+import Quiz from './components/Quiz/Quiz';
+import Menu from './components/Menu';
+import { Provider } from 'react-redux'
+import './style/css/app.css'
 
-function App() {
+
+function App( props ) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={props.store} >
+      <Router>
+        <Switch>
+          <Route exact path="/" component={Menu}/>
+          <Route exact path="/quiz" component={Quiz}/>
+          <Route path="/question-handler" component={QuestionHandler}/>
+        </Switch>
+      </Router>
+    </Provider>
+    
+    
   );
 }
 
